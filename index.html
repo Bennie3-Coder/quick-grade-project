@@ -1,0 +1,30 @@
+<!-- index.html - paste this into the GitHub "Create new file" editor -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick Grade Project - YOUR NAME</title>
+</head>
+<body style="font-family:Arial, sans-serif; padding:20px;">
+  <h1>Quick Grade Project</h1>
+  <p><strong>Student:</strong> YOUR NAME</p>
+  <p><strong>Class:</strong> CLASS NAME</p>
+  <p><strong>Date:</strong> put today’s date</p>
+
+  <h2>Interactive demo</h2>
+  <p>Click the button to increase the counter.</p>
+  <button id="btn">Click me!</button>
+  <p>Times clicked: <span id="count">0</span></p>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const countEl = document.getElementById('count');
+    let count = 0;
+    btn.addEventListener('click', () => {
+      count += 1;
+      countEl.textContent = count;
+    });
+  </script>
+</body>
+</html>
